@@ -3,8 +3,8 @@ const slides = [
     id: 'challenge',
     no: '01',
     layout: 'a',
-    kicker: 'งานที่ท้าทายที่สุด',
-    title: 'legal\nassessment',
+    kicker: 'Legal Assessment · Inspection Batch',
+    title: 'งานที่\nท้าทายที่สุด',
     columns: [
       {
         heading: 'Legal Assessment',
