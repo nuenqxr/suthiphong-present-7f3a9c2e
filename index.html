@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app" @click="onClick">
+  <div id="app" @click="onClick" @touchstart.passive="onTouchStart" @touchend.passive="onTouchEnd">
     <header class="meta top">
       <span class="brand">VINAI QMS</span>
       <span class="mid">review<br>jul — sep</span>
@@ -28,12 +28,18 @@
           <p class="sub" v-if="current.sub">{{ current.sub }}</p>
           <p class="name" v-if="current.name">{{ current.name }}</p>
 
+          <div class="stat" v-if="current.stat">
+            <strong>{{ current.stat.value }}</strong>
+            <span>{{ current.stat.label }}</span>
+          </div>
+
           <div class="body" v-if="current.columns">
             <div class="col" v-for="(c, i) in current.columns" :key="c.heading">
               <h2><em>{{ i + 1 }}.</em><span>{{ c.heading }}</span></h2>
               <ul>
                 <li v-for="item in c.items" :key="item">{{ item }}</li>
               </ul>
+              <p class="result" v-if="c.result">{{ c.result }}</p>
             </div>
           </div>
 

@@ -18,22 +18,21 @@ const slides = [
       {
         heading: 'Legal Assessment',
         items: [
-          'ลูกค้ารอใช้สัปดาห์ถัดไป',
-          'เหลือเวลาทำจริง 10 วัน',
-          'ทั้งโมดูล ทั้งหน้าจอและหลังบ้าน',
-          'ทำสองฝั่งไปพร้อมกัน',
-          'ใช้ชิ้นส่วนเดิมของทีม',
-          'แก้เคสที่ลูกค้าเจอจริงก่อน',
+          'เหลือเวลาทำจริง 10 วันก่อนลูกค้าใช้',
+          'ทั้งโมดูล: My Task, My Approval, Recheck, Legal Master, ปฏิทิน',
+          'ทำ Flutter + Go API พร้อมกัน ต่อ NCR และ workflow เดิม',
+          'ใช้ component กลางของทีม แก้เคสที่ลูกค้าเจอจริงก่อน',
         ],
+        result: 'ส่งทันกำหนด · ขึ้น production ให้ลูกค้าทดลองใช้แล้ว',
       },
       {
         heading: 'Inspection Batch',
         items: [
-          'รับความต้องการจากลูกค้าโดยตรง',
-          'ลูกค้าใช้งานจริงครั้งแรก ๆ ของ Vinai',
-          'กดดันคนละแบบ แต่สนุก',
-          'หวังให้ลูกค้าพอใจกับระบบ',
+          'รับ requirement จากลูกค้าโดยตรง',
+          'Session, กะ, roster, น้ำหนักต่อตัว, export Excel/PDF',
+          'Form Builder จัด zone แบบลากวาง',
         ],
+        result: 'ตอบโจทย์ลูกค้า · ส่วนหนึ่งที่ทำให้ TNT ทำงานกับเราต่อ',
       },
     ],
   },
@@ -48,11 +47,11 @@ const slides = [
       {
         heading: 'เกิดอะไรขึ้น',
         items: [
-          'รวมโค้ดทำให้ล่าช้า',
-          'Dev หลายคน โค้ดตกหล่นบ่อย',
-          'Tester ต้องเทสซ้ำ',
-          'โค้ด Management Review หาย ต้องกู้คืน',
-          'แก้ UI ก่อนตกลงแนวทาง จนต้องย้อนกลับ',
+          'ปัญหาเล็ก แต่เกิดบ่อย สะสมเป็นเวลา',
+          'Merge ~282 ครั้งใน Q3',
+          'โค้ดบางส่วนหายหลังรวม ต้องกู้คืนและเทสซ้ำ',
+          'Conflict ค้างใน migration · ข้อความ 4 ภาษาไม่ตรงกัน',
+          'ผม refactor UI ก่อนยืนยัน spec จนต้อง revert',
         ],
       },
       {
@@ -60,9 +59,9 @@ const slides = [
         items: [
           'ตกลงแนวทางก่อนปรับโค้ดหลายไฟล์',
           'แบ่งงานชิ้นเล็ก ส่งเข้าโค้ดหลักเร็วขึ้น',
-          'ตรวจความครบของโค้ดหลังรวมทุกครั้ง',
+          'รัน merge-integrity check หลังรวมทุกครั้ง',
           'ใช้เครื่องมือรวมไฟล์หลายภาษาอัตโนมัติ',
-          'จองเลขลำดับฐานข้อมูลก่อนเริ่ม',
+          'จองเลขลำดับ migration ก่อนเริ่มงาน',
         ],
       },
     ],
@@ -73,28 +72,52 @@ const slides = [
     layout: 'a',
     kicker: 'เก่งขึ้นไหม',
     title: 'พัฒนาขึ้น',
+    stat: { value: 'ครึ่งวัน → 1 ชม.', label: 'เวลาทำฟีเจอร์ที่เคยต้องรอ backend' },
     columns: [
       {
-        heading: 'ทำ Full-stack ได้ดีขึ้น',
+        heading: 'Full-stack',
         items: [
-          'ทำฟีเจอร์หลักหลายอัน',
-          'กลับไปแก้สิ่งที่เคยทำไม่ได้',
-          'เมื่อก่อนรอ backend ครึ่งวัน',
-          'ตอนนี้ทำเอง ไม่เกิน 1 ชั่วโมง',
+          'ฟีเจอร์ที่เคยรอ backend ตอนนี้ทำเองได้',
+          'งานข้าม 2 repo (Flutter + Go) เป็นงานปกติ',
         ],
       },
       {
         heading: 'ที่เห็นเพิ่ม',
         items: [
-          'งานคล่องตัว พี่ ๆ วางใจ',
-          'ช่วยงานฝั่งลูกค้าได้มากขึ้น',
+          'ส่งมอบ 4 โมดูล: Inspection, Risk, Management Review, Legal',
+          'Training autosave + session lock',
+          'ทำ design system กลางให้ทีม',
           'คุยกับลูกค้าโดยตรงครั้งแรก',
-          'ส่งมอบ 4 ฟัีเจอร์ใหญ่',
-          'ทำชิ้นส่วนหน้าจอกลางให้ทีม',
         ],
       },
     ],
-    note: 'ต่อเนื่อง Q4 — แชท AI น้องวิ )',
+  },
+  {
+    id: 'q4',
+    no: '04',
+    layout: 'a',
+    kicker: 'ต.ค. – ธ.ค. 2026',
+    title: 'เป้าหมาย\nQ4',
+    columns: [
+      {
+        heading: 'เป้าหมาย',
+        items: [
+          'น้องวิ (แชท AI) ใช้งานได้จริง',
+          'ปรับปรุงระบบ เตรียมพร้อม pentest',
+          'ฟีเจอร์ใช้ภายในตอบโจทย์ทีมในบริษัท',
+        ],
+      },
+      {
+        heading: 'ฟีเจอร์ใช้ภายใน',
+        items: [
+          'Change Control',
+          'Risk Management',
+          'Document Control',
+          'Training Management',
+          'Internal Audit',
+        ],
+      },
+    ],
   },
 ];
 
@@ -111,11 +134,26 @@ Vue.createApp({
       if (i < 0 || i >= this.slides.length || i === this.index) return;
       this.dir = i > this.index ? 'next' : 'prev';
       this.index = i;
+      document.querySelector('.stage')?.scrollTo(0, 0);
       location.hash = '#' + (i + 1);
     },
     next() { this.go(this.index + 1); },
     prev() { this.go(this.index - 1); },
+    onHash() {
+      const n = parseInt(location.hash.slice(1), 10);
+      if (n >= 1 && n <= this.slides.length) this.go(n - 1);
+    },
+    isCompact() { return window.matchMedia('(max-width: 800px), (max-height: 520px)').matches; },
+    onTouchStart(e) { const t = e.changedTouches[0]; this.touch = { x: t.clientX, y: t.clientY }; },
+    onTouchEnd(e) {
+      if (!this.touch) return;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - this.touch.x, dy = t.clientY - this.touch.y;
+      this.touch = null;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) dx < 0 ? this.next() : this.prev();
+    },
     onClick(e) {
+      if (this.isCompact()) return;
       if (e.target.closest('.nav, .topbar')) return;
       this.next();
     },
@@ -129,6 +167,10 @@ Vue.createApp({
   },
   mounted() {
     window.addEventListener('keydown', this.onKey);
+    window.addEventListener('hashchange', this.onHash);
   },
-  unmounted() { window.removeEventListener('keydown', this.onKey); },
+  unmounted() {
+    window.removeEventListener('keydown', this.onKey);
+    window.removeEventListener('hashchange', this.onHash);
+  },
 }).mount('#app');
