@@ -48,6 +48,7 @@ h1 { position: absolute; display: flex; flex-direction: column; font-family: var
 .layout-a .kicker { left: 0; top: 4%; }
 .layout-a .body { left: 58%; right: 0; bottom: 4%; }
 .layout-a .arrow { left: 0; bottom: 4%; }
+.layout-a .note { left: 0; bottom: 12%; }
 
 /* layout b: title low-right, text left */
 .layout-b h1 { right: 0; bottom: 14%; text-align: right; align-items: flex-end; }

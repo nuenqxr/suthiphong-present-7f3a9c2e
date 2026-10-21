@@ -29,7 +29,7 @@ const slides = [
   {
     id: 'time',
     no: '02',
-    layout: 'b',
+    layout: 'a',
     kicker: 'งานที่เสียเวลามากที่สุด',
     title: 'merge &\nconflict',
     columns: [
@@ -57,7 +57,7 @@ const slides = [
   {
     id: 'growth',
     no: '03',
-    layout: 'c',
+    layout: 'a',
     kicker: 'เก่งขึ้นไหม',
     title: 'เก่งขึ้น',
     columns: [
