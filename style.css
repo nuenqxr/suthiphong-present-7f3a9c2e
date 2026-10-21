@@ -49,7 +49,7 @@ h1 { position: absolute; display: flex; flex-direction: column; font-family: var
 .layout-a { --h1: clamp(44px, 6.8vw, 100px); }
 .layout-a h1 { left: 0; top: 14%; font-size: var(--h1); line-height: 1.12; }
 .layout-a .kicker { left: 0; top: 4%; }
-.layout-a .body { left: 58%; right: 0; bottom: 4%; }
+.layout-a .body { left: 58%; right: 0; top: 50%; transform: translateY(-50%); }
 .layout-a .arrow { left: 0; bottom: 4%; }
 .layout-a .sub { left: 0; top: calc(14% + var(--h1) * 2.5); }
 .layout-a .name { left: 0; top: calc(14% + var(--h1) * 2.5 + clamp(60px, 6vw, 88px)); }
