@@ -40,7 +40,8 @@ const slides = [
     no: '02',
     layout: 'a',
     kicker: 'งานที่เสียเวลามากที่สุด',
-    title: 'merge &\nconflict',
+    title: 'Merge &\nConflict',
+    sub: '(การรวมโค้ด)',
     columns: [
       {
         heading: 'เกิดอะไรขึ้น',
