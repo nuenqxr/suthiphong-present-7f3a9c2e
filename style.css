@@ -40,8 +40,9 @@ h1 { position: absolute; display: flex; flex-direction: column; font-family: var
 
 .body { position: absolute; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
 .col { border-top: 1px solid var(--ink); padding-top: 12px; }
-.col h2 { display: flex; align-items: flex-end; gap: 10px; font-weight: 600; font-size: clamp(16px, 1.6vw, 24px); margin-bottom: 14px; }
+.col h2 { display: flex; align-items: baseline; gap: 10px; font-weight: 600; font-size: clamp(16px, 1.6vw, 24px); margin-bottom: 14px; }
 .col h2 em { font-style: normal; font-family: var(--display); font-weight: 400; font-size: clamp(26px, 2.2vw, 34px); line-height: 1; }
+.col h2 small { display: block; margin-top: 2px; font-size: .72em; font-weight: 400; color: var(--mute); }
 .col ul { list-style: none; padding: 0; }
 .col li { position: relative; padding-left: 1em; font-size: clamp(15px, 1.5vw, 22px); line-height: 1.5; margin-bottom: 8px; color: #222; }
 .col li::before { content: '·'; position: absolute; left: 0; top: -.15em; font-size: 1.9em; line-height: 1; font-weight: 700; }

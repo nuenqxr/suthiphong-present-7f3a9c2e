@@ -35,7 +35,7 @@
 
           <div class="body" v-if="current.columns">
             <div class="col" v-for="(c, i) in current.columns" :key="c.heading">
-              <h2><em>{{ i + 1 }}.</em><span>{{ c.heading }}</span></h2>
+              <h2><em>{{ i + 1 }}.</em><span>{{ c.heading }}<small v-if="c.subheading">{{ c.subheading }}</small></span></h2>
               <ul>
                 <li v-for="item in c.items" :key="item">{{ item }}</li>
               </ul>
