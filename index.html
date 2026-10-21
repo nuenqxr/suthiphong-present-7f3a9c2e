@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>สรุปผลงาน Q3 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Noto+Sans+Thai:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" @click="onClick">
+    <header class="meta top">
+      <span class="brand">QMS™ Q3 / 2026</span>
+      <span class="mid">review<br>jul — sep</span>
+      <span class="page">page {{ current.no }}</span>
+    </header>
+
+    <main class="stage">
+      <transition :name="dir" mode="out-in">
+        <section class="slide" :class="'layout-' + current.layout" :key="current.id">
+
+          <p class="kicker">{{ current.kicker }}</p>
+          <h1><span v-for="(line, i) in current.title.split('\n')" :key="i">{{ line }}</span></h1>
+
+          <div class="body">
+            <div class="col" v-for="(c, i) in current.columns" :key="c.heading">
+              <h2><em>{{ i + 1 }}.</em><span>{{ c.heading }}</span></h2>
+              <ul>
+                <li v-for="item in c.items" :key="item">{{ item }}</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="note" v-if="current.note">{{ current.note }}</p>
+          <span class="arrow">{{ index < slides.length - 1 ? '↓' : '→' }}</span>
+        </section>
+      </transition>
+    </main>
+
+    <footer class="meta bottom">
+      <button class="btn" @click.stop="prev" :disabled="index === 0" aria-label="ก่อนหน้า">←</button>
+      <span class="count">{{ current.no }} / 0{{ slides.length }}</span>
+      <button class="btn" @click.stop="next" :disabled="index === slides.length - 1" aria-label="ถัดไป">→</button>
+    </footer>
+  </div>
+
+  <script src="vendor/vue.global.prod.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
