@@ -89,7 +89,7 @@ const slides = [
         ],
       },
     ],
-    note: 'ต่อเนื่อง Q4 — แชท AI น้องวิ + MCP (prototype)',
+    note: 'ต่อเนื่อง Q4 — แชท AI น้องวิ + MCP',
   },
 ];
 
