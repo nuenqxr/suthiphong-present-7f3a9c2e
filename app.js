@@ -1,5 +1,14 @@
 const slides = [
   {
+    id: 'cover',
+    no: '00',
+    layout: 'a',
+    kicker: 'ก.ค. – ก.ย. 2026',
+    title: 'นำเสนอ\nผลงาน Q3',
+    sub: 'Vinai Developer',
+    name: 'Sutthiphong Raiphobn',
+  },
+  {
     id: 'challenge',
     no: '01',
     layout: 'a',

@@ -32,8 +32,10 @@ body {
 .art-2 { background: var(--block-2); }
 
 .kicker { position: absolute; font-size: 12px; font-weight: 600; letter-spacing: .02em; }
-h1 { position: absolute; display: flex; flex-direction: column; font-family: var(--display); font-weight: 400; font-size: clamp(64px, 14vw, 210px); line-height: .88; letter-spacing: -.045em; text-transform: lowercase; }
+h1 { position: absolute; display: flex; flex-direction: column; font-family: var(--display); font-weight: 400; font-size: clamp(64px, 14vw, 210px); line-height: .88; letter-spacing: -.045em; }
 .note { position: absolute; font-size: 12px; font-weight: 600; max-width: 320px; line-height: 1.4; }
+.sub { position: absolute; font-family: var(--display); font-weight: 300; font-size: clamp(28px, 3.6vw, 52px); letter-spacing: -.02em; }
+.name { position: absolute; font-size: clamp(14px, 1.3vw, 18px); font-weight: 600; letter-spacing: .02em; }
 .arrow { position: absolute; font-size: 34px; font-weight: 300; line-height: 1; }
 
 .body { position: absolute; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -48,6 +50,8 @@ h1 { position: absolute; display: flex; flex-direction: column; font-family: var
 .layout-a .kicker { left: 0; top: 4%; }
 .layout-a .body { left: 58%; right: 0; bottom: 4%; }
 .layout-a .arrow { left: 0; bottom: 4%; }
+.layout-a .sub { left: 0; bottom: 19%; }
+.layout-a .name { left: 0; bottom: 14%; }
 .layout-a .note { left: 0; bottom: 12%; }
 
 /* layout b: title low-right, text left */

@@ -25,7 +25,10 @@
           <p class="kicker">{{ current.kicker }}</p>
           <h1><span v-for="(line, i) in current.title.split('\n')" :key="i">{{ line }}</span></h1>
 
-          <div class="body">
+          <p class="sub" v-if="current.sub">{{ current.sub }}</p>
+          <p class="name" v-if="current.name">{{ current.name }}</p>
+
+          <div class="body" v-if="current.columns">
             <div class="col" v-for="(c, i) in current.columns" :key="c.heading">
               <h2><em>{{ i + 1 }}.</em><span>{{ c.heading }}</span></h2>
               <ul>
@@ -42,7 +45,7 @@
 
     <footer class="meta bottom">
       <button class="btn" @click.stop="prev" :disabled="index === 0" aria-label="ก่อนหน้า">←</button>
-      <span class="count">{{ current.no }} / 0{{ slides.length }}</span>
+      <span class="count">{{ current.no }} / {{ slides[slides.length - 1].no }}</span>
       <button class="btn" @click.stop="next" :disabled="index === slides.length - 1" aria-label="ถัดไป">→</button>
     </footer>
   </div>
