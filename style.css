@@ -46,12 +46,13 @@ h1 { position: absolute; display: flex; flex-direction: column; font-family: var
 .col li { font-size: clamp(13px, 1.1vw, 17px); line-height: 1.5; margin-bottom: 8px; color: #222; }
 
 /* layout a: title top-left, text bottom-right */
-.layout-a h1 { left: 0; top: 14%; font-size: clamp(56px, 9.5vw, 140px); line-height: 1.1; }
+.layout-a { --h1: clamp(44px, 6.8vw, 100px); }
+.layout-a h1 { left: 0; top: 14%; font-size: var(--h1); line-height: 1.12; }
 .layout-a .kicker { left: 0; top: 4%; }
 .layout-a .body { left: 58%; right: 0; bottom: 4%; }
 .layout-a .arrow { left: 0; bottom: 4%; }
-.layout-a .sub { left: 0; bottom: 19%; }
-.layout-a .name { left: 0; bottom: 14%; }
+.layout-a .sub { left: 0; top: calc(14% + var(--h1) * 2.5); }
+.layout-a .name { left: 0; top: calc(14% + var(--h1) * 2.5 + clamp(60px, 6vw, 88px)); }
 .layout-a .note { left: 0; bottom: 12%; }
 
 /* layout b: title low-right, text left */
