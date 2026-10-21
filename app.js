@@ -6,7 +6,7 @@ const slides = [
     kicker: 'ก.ค. – ก.ย. 2026',
     title: 'นำเสนอ\nผลงาน Q3',
     sub: 'Vinai Developer',
-    name: 'Sutthiphong Raiphobn',
+    name: 'Sutthiphong Raiphon',
   },
   {
     id: 'challenge',
