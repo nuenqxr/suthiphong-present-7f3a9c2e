@@ -68,8 +68,8 @@ const slides = [
     id: 'growth',
     no: '03',
     layout: 'a',
-    kicker: 'การพัฒนาตัวเอง',
-    title: 'พัฒนา',
+    kicker: 'เก่งขึ้นไหม',
+    title: 'พัฒนาขึ้น',
     columns: [
       {
         heading: 'full-stack ได้ดีขึ้น',
